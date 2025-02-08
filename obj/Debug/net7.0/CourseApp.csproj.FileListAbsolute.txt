@@ -28,3 +28,4 @@ c:\Users\User\Documents\Github\CourseApp\obj\Debug\net7.0\refint\CourseApp.dll
 c:\Users\User\Documents\Github\CourseApp\obj\Debug\net7.0\CourseApp.pdb
 c:\Users\User\Documents\Github\CourseApp\obj\Debug\net7.0\CourseApp.genruntimeconfig.cache
 c:\Users\User\Documents\Github\CourseApp\obj\Debug\net7.0\ref\CourseApp.dll
+c:\Users\User\Documents\Github\CourseApp\obj\Debug\net7.0\CourseApp.sourcelink.json
