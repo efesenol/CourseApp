@@ -17,10 +17,18 @@ namespace CourseApp.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Apply([FromForm]Candidate model)
+        public IActionResult Apply([FromForm] Candidate model)
         {
-            Repository.Add(model);
-            return View("Feedback", model);
+            if(Repository.Applications.Any(c => c.Email.Equals(model.Email)))
+            {
+                ModelState.AddModelError("","There is aldeadt an application for you.");
+            }
+            if (ModelState.IsValid)
+            {
+                Repository.Add(model);
+                return View("Feedback", model);
+            }
+            return View();
         }
     }
 }
